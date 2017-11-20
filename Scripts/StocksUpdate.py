@@ -28,7 +28,7 @@ for i in stocks:
     print("ticker: ")
     print(i)
     print(len(data))
-    df = pd.DataFrame(data, columns=['open', 'high', 'low', 'close', 'volume'])
+    df = pd.DataFrame(data)
     # data_T(data)
     with open('../pandas/'+i+'.csv', 'w') as txtfile:
         df.to_csv(txtfile)
