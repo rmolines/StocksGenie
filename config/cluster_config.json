@@ -1,8 +1,20 @@
 [
- {
- "Classification": "spark",
- "Properties": {
- "maximizeResourceAllocation": "true"
- }
- }
+  {
+    "Classification": "spark",
+    "Properties": {
+      "maximizeResourceAllocation": "true"
+    }
+  },
+  {
+    "Classification": "spark-env",
+    "Configurations": [
+      {
+        "Classification": "export",
+        "Properties": {
+          "PYSPARK_PYTHON": "/usr/bin/python3",
+          "PYSPARK_PYTHON_DRIVER": "/usr/bin/python3"
+        }
+      }
+    ]
+  }
 ]
